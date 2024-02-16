@@ -1,0 +1,302 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+*   {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+li, a, button {
+    font-family: "Work Sans", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #678983;
+    text-decoration: none;
+}
+
+/* bagian navbar */
+header {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+}
+.logo {
+    cursor: pointer;
+    font-size: 30px;
+    color: #678983;
+    /* margin-right: auto; */
+}
+.nav_list {
+    list-style: none;
+}
+.nav_list li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+.nav_list li a {
+    transition: all 0.3s ease 0s;
+}
+.nav_list li a:hover {
+    color: #F0E9D2;
+}
+
+/* buat style button */
+.button {
+    padding: 0.5rem;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    margin-block-start: 1rem;
+    background-color: #678983;
+    color: #171010;
+    cursor: pointer;
+    transition: all 0.15s ease-in;
+  }
+  .cartIcon {
+    width: 16px;
+    height: fit-content;
+  }
+  .cartIcon path {
+    fill: #171010;
+  }
+  .cartIcon path:hover {
+    color: #678983;
+    transition-duration: .3s;
+  }
+  .button:hover {
+    border: 2px solid;
+    background-color: white;
+    color: #678983;
+    transition-duration: .3s;
+  }
+  .button:active {
+    transform: translate(2px ,0px);
+    box-shadow: 0px 1px 0px rgb(139, 113, 255);
+    padding-bottom: 1px;
+  }
+  
+
+/* main (isi konten) */
+main {
+    width: 100%;
+    /* max-width: 1200px; */
+    margin-inline: auto;
+    align-items: center;
+    /* background-image: url(backgrounhome.png); */
+    background-color: white;
+}
+
+/* main bagian home */
+main .home_content {
+    padding: 6rem 5% 6rem;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+    background-image: url(backgrounhome.png);
+    background-position: 0.5rem;
+
+}
+main .home_content .deskripsi_content {
+    flex: 1 1;
+    /* background-color: #234567; */
+}
+main .home_content .deskripsi_content .merek {
+    font-family: "Work Sans", sans-serif;
+    margin-block: 2rem;
+    font-size: 4rem;
+    color: black;
+}
+main .home_content .deskripsi_content p {
+    font-size: 1rem;
+    font-family: "Work Sans", sans-serif;
+    line-height: 1.7rem;
+    color: black;
+}
+main .home_content .deskripsi_content .double-btn {
+    display: flex;
+    gap: 1rem;
+}
+main .home_content .deskripsi_content .double-btn .a-btn {
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    margin-block-start: 1rem;
+    background-color: #678983;
+    color: #171010;
+    cursor: pointer;
+    transition: all 0.15s ease-in;
+}
+main .home_content .deskripsi_content .double-btn .a-btn:hover {
+    border: 2px solid;
+    background-color: transparent;
+    color: #678983;
+    transition-duration: 0.3s;
+}
+
+
+.fotocon {
+    flex: 1;
+    display: flex;
+    /* background-color: black; */
+    /* background-size: 10px; */
+    /* border-radius: 90px */
+}
+.fotocon img {
+    width: 400px;
+    min-width: 250px;
+    margin: auto;
+    border-radius: 20px;
+    /* margin-top: 1rem; */
+}
+
+/* buat garis imut dari mas ervin */
+hr {
+    border: none;
+    height: 2px;
+    color: #333; 
+    background-color: #333;
+}
+
+/*======================================== main bagian about ====================================================*/
+main .about-content{
+    padding: 5rem 7% 10em;
+}
+main .about-content h1 {
+    text-align: center;
+    padding: 30px;
+    font-family: "Work Sans", sans-serif;
+}
+
+/*========================================= main bagian shop ================================================*/
+main .shop-content{
+    padding: 5rem 7% 10rem;
+    background-image: url(backgrounhome.png);
+}
+main .shop-content h1 {
+    text-align: center;
+    padding: 30px;
+    font-family: "Work Sans", sans-serif;
+}
+
+/* ==================shop card============= */
+main .shop-content .shop-main {
+    display: flex;
+    justify-content: center;
+}
+main .shop-content .shop-main .card-shop {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 2em;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    border: 2px solid;
+    color: #678983;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+
+}
+main .shop-content .shop-main .card-shop img {
+    width: 100%;
+    height: 250px;
+    margin: auto;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    /* visibility: hidden; */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+main .shop-content .shop-main .card-shop .item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+}
+main .shop-content .shop-main .card-shop .item .harga {
+    color: #171010;
+    font-family: "Work Sans", sans-serif;
+    padding-top: 1rem;
+}
+main .shop-content .shop-main .card-shop .item .ckt-btn {
+    padding: 0.5rem;
+    background-color: #678983;
+    cursor: pointer;
+    color: #171010;
+    border: 2px solid transparent;
+    transition: all 0.15s ease-in;
+}
+main .shop-content .shop-main .card-shop .item .ckt-btn:hover {
+    border: 2px solid;
+    background-color: transparent;
+    color: #678983;
+    transition-duration: 0.3s;
+}
+
+
+
+/*================================== button selengkapnya ============================*/
+.mnj-shop {
+    position: relative;
+    margin: auto;
+    padding: 12px 18px;
+    transition: all 0.2s ease;
+    border: none;
+    background: none;
+    cursor: pointer;
+  }
+  
+  .mnj-shop:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    border-radius: 50px;
+    background: #678983;
+    width: 45px;
+    height: 45px;
+    transition: all 0.3s ease;
+  }
+  
+  .mnj-shop span {
+    position: relative;
+    font-family: "Work Sans", sans-serif;
+    font-size: 18px;
+    font-weight: 300px;
+    letter-spacing: 0.05em;
+    color: black;
+  }
+  
+  .mnj-shop svg {
+    position: relative;
+    top: 0;
+    margin-left: 10px;
+    fill: none;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke: #234567;
+    stroke-width: 2;
+    transform: translateX(-5px);
+    transition: all 0.3s ease;
+  }
+  
+  .mnj-shop:hover:before {
+    width: 100%;
+    background: #678983;
+  }
+  
+  .mnj-shop:hover svg {
+    transform: translateX(0);
+  }
+  
+  .mnj-shop:active {
+    transform: scale(0.95);
+  }
