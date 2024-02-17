@@ -76,8 +76,11 @@ header {
     box-shadow: 0px 1px 0px rgb(139, 113, 255);
     padding-bottom: 1px;
   }
-  
 
+
+
+  
+/* ========================AWAL MAIN======================= */
 /* main (isi konten) */
 main {
     width: 100%;
@@ -95,7 +98,7 @@ main .home_content {
     display: flex;
     align-items: center;
     margin-bottom: 25px;
-    background-image: url(backgrounhome.png);
+    background-image: url(asset/photo/backgrounhome.png);
     background-position: 0.5rem;
 
 }
@@ -174,7 +177,7 @@ main .about-content h1 {
 /*========================================= main bagian shop ================================================*/
 main .shop-content{
     padding: 5rem 7% 10rem;
-    background-image: url(backgrounhome.png);
+    background-image: url(asset/photo/backgrounhome.png);
 }
 main .shop-content h1 {
     text-align: center;
@@ -300,3 +303,10 @@ main .shop-content .shop-main .card-shop .item .ckt-btn:hover {
   .mnj-shop:active {
     transform: scale(0.95);
   }
+/* =======================AKHIR MAIN========================= */
+
+
+
+
+  /* ===================HALAMAN CHEKOUT================ */
+  
